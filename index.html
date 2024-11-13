@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Selling Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-bs-spy="scroll">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+    <header class="header">
+        <nav class="navbar">
+            <div class="compney_logo">
+                <a href="#" class="logo"><span id="name">Jaimin</span>Wheels</a>
+            </div>
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#vehicle">Vehicle</a>
+                <a href="#services">Services</a>
+                <a href="#featured">Featured</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contactus">Contact us</a>
+            </div>
+            <div class="login_btn" id="login_button">
+                <button  class="login" ><i class="far fa-user"> </i>Login</button>
+                <!-- <button class="register">Register</button> -->
+            </div>
+        </nav>
+    </header>
+
+    <div class="login-form-container">
+        <span class="fas fa-times" id="close-login-form"></span>
+        <form action="" name="login_form" onsubmit="login(this)">
+            <h2>user login</h2>
+            <input type="email" placeholder="Email" class="box" name="login_email" id="Email" required>
+            <input type="password" placeholder="Password" class="box" required>
+            <p>forgot your password <a href="#">click here</a></p>
+            <input type="submit" id="login_submit" class="btn" value="login">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn"><i class="fab fa-google"></i>  Google</a>
+                <a href="#" class="btn"><i class="fab fa-facebook-f"></i>  Facebook</a>
+            </div>
+            <p>don't have an account <a href="#" id="register">create one</a></p>
+        </form>
+    </div>
+
+    <div class="register-form-container">
+        <span class="fas fa-times" id="close-register-form"></span>
+        <form action="" name="register_form" onsubmit="register(this)">
+            <h2>user register</h2>
+            <input type="text" placeholder="Name" class="box" id="Name" required>
+            <input type="email" placeholder="Email" class="box" name="login_email" required>
+            <input type="password" placeholder="Password" class="box" required>
+            <p>forgot your password <a href="#">click here</a></p>
+            <input type="submit" id="register_submit" class="btn" value="register">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn"><i class="fab fa-google"></i>  Google</a>
+                <a href="#" class="btn"><i class="fab fa-facebook-f"></i>  Facebook</a>
+            </div>
+            <p>if you have an account <a href="#" id="login">click for login</a></p>
+        </form>
+    </div>
+
+    <section class="home" id="home">
+        <h1 class="home-parallax">Find Your Car</h1>
+        <img class="home-parallax" src="img2.png" alt="sorry">
+        <a href="#" class="btn home-parallax">Explore Cars</a>
+    </section>
+
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-home"></i>
+            <div class="content">
+                <h3>150+</h3>
+                <p>branches</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>4770+</h3>
+                <p>Cars Sold</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-users"></i>
+            <div class="content">
+                <h3>590+</h3>
+                <p>Happy Clients</p>
+            </div>
+        </div>
+        <div class="icons ">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>890+</h3>
+                <p>New Cars</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="vehicle" id="vehicle">
+        <h1 class="heading"> Vehicle Types </h1>
+        <div class="box-container">
+            <div class="box">
+                <a href="car1.html" target="_blank">
+                    <img src="E:\Collage PROJECT\SEM-3\FSD\car photos\sedan\sedan.jpeg" alt="sorry">
+                </a>
+                <h6>Sedan</h6>
+            </div>
+            <div class="box">
+                <a href="car2.html" target="_blank">
+                    <img src="E:\Collage PROJECT\SEM-3\FSD\car photos\convertible\convertible.jpeg" alt="sorry">
+                </a>
+                <h6>Convertible</h6>
+            </div>
+            <div class="box">
+                <a href="car3.html" target="_blank">
+                    <img src="E:\Collage PROJECT\SEM-3\FSD\car photos\suv\suv.jpeg" alt="sorry">
+                </a>
+                <h6>SUV</h6>
+            </div>
+            <div class="box">
+                <a href="car4.html" target="_blank">
+                    <img src="E:\Collage PROJECT\SEM-3\FSD\car photos\family MPV\mpv.jpeg" alt="sorry">
+                </a>
+                <h6>Family MPV</h6>
+            </div>
+            <div class="box">
+                <a href="car5.html" target="_blank">
+                    <img src="E:\Collage PROJECT\SEM-3\FSD\car photos\coupe\coupe.jpeg" alt="sorry">
+                </a>
+                <h6>Coupe</h6>
+            </div>
+            <div class="box">
+                <a href="car6.html" target="_blank">
+                    <img src="E:\Collage PROJECT\SEM-3\FSD\car photos\super\super.jpeg" alt="sorry">
+                </a>
+                <h6>Super</h6>
+            </div>
+            <div class="box">
+                <a href="car7.html" target="_blank">
+                    <img src="E:\Collage PROJECT\SEM-3\FSD\car photos\electric\electric.jpeg" alt="sorry">
+                </a>
+                <h6>Electric</h6>
+            </div>
+            <div class="box">
+                <a href="car8.html" target="_blank">
+                    <img src="E:\Collage PROJECT\SEM-3\FSD\car photos\luxury\luxury.jpeg" alt="sorry">
+                </a>
+                <h6>Luxury</h6>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services" id="services">
+        <h1 class="heading">Our <span>Services</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-car"></i>
+                <h3>car selling</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam dolorem  ea molestias enim sint.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="box">
+                <i class="fas fa-tools"></i>
+                <h3>parts repair</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam dolorem  ea molestias enim sint.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="box">
+                <i class="fas fa-car-crash"></i>
+                <h3>car insurance</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam dolorem  ea molestias enim sint.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="box">
+                <i class="fas fa-car-battery"></i>
+                <h3>battery replacement</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam dolorem  ea molestias enim sint.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="box">
+                <i class="fas fa-gas-pump"></i>
+                <h3>oil change</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam dolorem  ea molestias enim sint.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 support</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam dolorem  ea molestias enim sint.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section><br>
+
+
+    <section class="featured" id="featured">
+        <h1 class="heading"><span> Featured</span> cars </h1>
+        <div class="featured-slider">
+                <div class="box">
+                    <img src="agera.jpg" alt="sorry">
+                    <h3>Koenigsegg Agera</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> 4.5  (18.6k reviews)</span>
+                    </div>
+                    <div class="price">₹1,00,000/-</div>
+                    <input type="button" class="button" value="check out">
+                </div>
+                <div class="box">
+                    <img src="one.jpg" alt="sorry">
+                    <h3>Koenigsegg one</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> 4.5  (18.6k reviews)</span>
+                    </div>
+                    <div class="price">₹1,00,000/-</div>
+                    <input type="button" class="button" value="check out">
+                </div>
+                <div class="box">
+                    <img src="chiron.jpg" alt="sorry">
+                    <h3>Buggati Chiron</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> 4.5  (18.6k reviews)</span>
+                    </div>
+                    <div class="price">₹1,00,000/-</div>
+                    <input type="button" class="button" value="check out">
+                </div>
+                <div class="box">
+                    <img src="veneno.jpg" alt="sorry">
+                    <h3>Lamborghini Veneno</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> 4.5  (18.6k reviews)</span>
+                    </div>
+                    <div class="price">₹1,00,000/-</div>
+                    <input type="button" class="button" value="check out">
+                </div>
+                <div class="box">
+                    <img src="divo.jpeg" alt="sorry">
+                    <h3>Buggati Divo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> 4.5  (18.6k reviews)</span>
+                    </div>
+                    <div class="price">₹1,00,000/-</div>
+                    <input type="button" class="button" value="check out">
+                </div>
+                <div class="box">
+                    <img src="centodieci.jpg" alt="sorry">
+                    <h3>Buggati centodieci</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> 4.5  (18.6k reviews)</span>
+                    </div>
+                    <div class="price">₹1,00,000/-</div>
+                    <input type="button" class="button" value="check out">
+                </div>
+        </div>
+
+    </section>
+
+
+    <section class="newsletter">
+        <h3> Subscribe for latest updates </h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt architecto </p>
+        <form action="" onsubmit="newsletter()">
+            <input type="email" id="email" placeholder="Enter your email">
+            <input type="submit" id="subscribe" class="subscribe">
+        </form>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <h1 class="heading">Client's <span>Review</span></h1>
+        <div class="review-slider">
+            <div class="review-wrapper" id="part1">
+                <div class="box">
+                    <img src="Jaimin.png" alt="sorry">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, perferendis.</p>
+                        <h3>John deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="Jaimin.png" alt="sorry">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, perferendis.</p>
+                        <h3>Gita</h3>
+                         <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                         </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="Jaimin.png" alt="sorry">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, perferendis.</p>
+                        <h3>Rajesh</h3>
+                         <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-wrapper" id="part2">
+                <div class="swiper-slide box">
+                    <img src="Jaimin.png" alt="sorry">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, perferendis.</p>
+                        <h3>Sunil</h3>
+                         <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                         </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="Jaimin.png" alt="sorry">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, perferendis.</p>
+                        <h3>Sanjay</h3>
+                         <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                         </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="Jaimin.png" alt="sorry">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, perferendis.</p>
+                        <h3>Santosh</h3>
+                         <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-wrapper" id="part3">
+                <div class="swiper-slide box">
+                    <img src="Jaimin.png" alt="sorry">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, perferendis.</p>
+                        <h3>Anita</h3>
+                         <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                         </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="Jaimin.png" alt="sorry">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, perferendis.</p>
+                        <h3>Suresh</h3>
+                         <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                         </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="Jaimin.png" alt="sorry">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, perferendis.</p>
+                        <h3>Sunita</h3>
+                         <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#part1" class="active-btn">1</a>
+                <a href="#part2">2</a>
+                <a href="#part3">3</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
+    </section><br><br>
+
+    <section class="contact" id="contactus">
+        <h1 class="heading"><span>contact</span> us </h1>
+        <div class="row">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3670.4930848377817!2d72.5586320743035!3d23.0790389142206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDA0JzQ0LjUiTiA3MsKwMzMnNDAuNCJF!5e0!3m2!1sen!2sin!4v1711703548417!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="">
+                <h3>Get in Touch</h3>
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="number" class="box">
+                <textarea placeholder="message" class="box" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="button">
+            </form>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>India</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>Fransh</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>USA</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>Canada</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>Australia</a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Vehicle</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Services</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Featured</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Reviews</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Contact</a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#"><i class="fas fa-phone"></i> +1123-456-78890</a>
+                <a href="#"><i class="fas fa-phone"></i> +111-222-3333</a>
+                <a href="#"><i class="fas fa-envelope"></i> jaimingohil1111@gmail.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>Ahmadabad, India-382481</a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i>Linkedin</a>
+                <a href="#"><i class="fab fa-pinterest"></i>Pinterest</a>
+            </div>
+        </div>
+        <div class="credit"> created by Jaimin Gohil | all rights reserved! </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,887 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+.header {
+  color: black;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: lightskyblue;
+}
+
+.compney_logo {
+  flex: 1;
+}
+
+#name{
+  font-size: 30px;
+  font-weight: bolder;
+  color: green;
+  font-family: cursive;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  padding: 0 20px;
+  margin-left: 10px;
+}
+
+.menu {
+  flex: 3;
+  text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  
+}
+.menu #home.active{
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.menu a:hover {
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  transform: scale(0.9);
+}
+
+.login_btn {
+  flex: 1;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.login_btn button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  padding: 8px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login_btn button:hover {
+  background-color: green;
+  color: white;
+  transform: scale(0.9);
+  border-radius: 5px;
+}
+
+
+
+
+/* Default styles */
+.login-form-container {
+  position: fixed;
+  top: 105%; left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.login-form-container.active{
+  top: 0;
+  opacity: 1;
+}
+.login-form-container form{
+  padding: 1rem;
+  margin: 4.5rem;
+  border-radius: 0.5rem;
+  box-shadow: #ccc;
+  border: 1px solid black;
+  text-align: center;
+  width: 30rem;
+  background-color: lightsteelblue;
+  
+}
+.login-form-container form .buttons{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.login-form-container form .btn{
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  background-color: lightgreen;
+  font-size: 1rem;
+  font-weight: bolder;
+  border: 1px solid black;
+}
+.login-form-container form .btn:hover{
+  background-color: green;
+  color: white;
+  transform: scale(0.9);
+  border-radius: 5px;
+}
+.login-form-container form h3{
+  color: black;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+.login-form-container form .box{
+  margin: 0.7rem 0;
+  width: 100%;
+  text-transform: none;
+  color: black;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+.login-form-container form p{
+  padding: 0.5rem 0;
+  font: 1.5rem;
+  color: black;
+}
+.login-form-container form p a{
+  color: blue;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+.login-form-container form p a:hover{
+  color: green;
+}
+.login-form-container #close-login-form{
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 3rem;
+  color: black;
+  cursor: pointer;
+}
+.login-form-container #close-login-form:hover{
+  color: blue;
+  transform: scale(0.9);
+  border-radius: 5px;
+}
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .login-form-container {
+      width: 90%;
+  }
+}
+
+/* Default styles */
+.register-form-container {
+  position: fixed;
+  top: 105%; left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.register-form-container.active{
+  top: 0;
+  opacity: 1;
+}
+.register-form-container form{
+  padding: 1rem;
+  margin: 4.5rem;
+  border-radius: 0.5rem;
+  box-shadow: #ccc;
+  border: 1px solid black;
+  text-align: center;
+  width: 30rem;
+  background-color: lightsteelblue;
+  
+}
+.register-form-container form .buttons{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.register-form-container form .btn{
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  background-color: lightgreen;
+  font-size: 1rem;
+  font-weight: bolder;
+  border: 1px solid black;
+}
+.register-form-container form .btn:hover{
+  background-color: green;
+  color: white;
+  transform: scale(0.9);
+  border-radius: 5px;
+}
+.register-form-container form h3{
+  color: black;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+.register-form-container form .box{
+  margin: 0.7rem 0;
+  width: 100%;
+  text-transform: none;
+  color: black;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+.register-form-container form p{
+  padding: 0.5rem 0;
+  font: 1.5rem;
+  color: black;
+}
+.register-form-container form p a{
+  color: blue;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+.register-form-container form p a:hover{
+  color: green;
+}
+.register-form-container #close-register-form{
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 3rem;
+  color: black;
+  cursor: pointer;
+}
+.register-form-container #close-register-form:hover{
+  color: blue;
+  transform: scale(0.9);
+  border-radius: 5px;
+}
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .register-form-container {
+      width: 90%;
+  }
+}
+
+
+
+
+
+.home{
+  text-align: center;
+  overflow-x: hidden;
+  padding-top: 70px;
+}
+
+.home h1{
+  font-size: 50px;
+  font-weight: bolder;
+  color: blue;
+  font-family: cursive;
+}
+
+.home img{
+  width: 100%;
+  height: 100%;
+}
+
+.home .btn{
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  padding: 8px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home .btn:hover{
+  background-color: green;
+  color: white;
+  transform: scale(0.9);
+  border-radius: 5px;
+}
+
+.home h1 {
+  animation: move 15s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+
+.icons-container{
+  padding: 1rem 1rem 1rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 1.5rem;
+  background: lightgrey;
+}
+
+.icons-container .icons{
+  
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #fff;
+  box-shadow: burlywood;
+  border-radius: 1rem;
+}
+
+.icons-container .icons i{
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  background: #eee;
+  color: black;
+  text-align: center;
+}
+
+.icons-container .icons .content h3{
+  color: blue;
+  font-size: 2rem;
+}
+.icons-container .icons .content p{
+  color: green;
+  font-size: 1.2rem;
+}
+
+.icons-container .icons:hover{
+  background: lightgreen;
+}
+
+.icons-container .icons:hover i{
+  background: blue;
+  color: white;
+}
+
+
+.vehicle{
+  padding-top: 55px;
+  text-align: center;
+  overflow-x: hidden;
+}
+.vehicle h1{
+  font-size: 50px;
+  font-weight: bolder;
+  color: blue;
+  font-family: cursive;
+  text-align: center;
+}
+.vehicle .box-container{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, auto);
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #fff;
+  box-shadow: burlywood;
+  border-radius: 1rem;
+  
+}
+.vehicle .box-container .box{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 1rem;
+  background: #eee;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0.5rem 3.5rem;
+}
+.vehicle .box-container .box img{
+  height: 60%;
+  width: 60%;
+  border-radius: 5rem;
+  margin-top: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+.vehicle .box-container .box h6{
+  color: blue;
+  font-size: 1.3rem;
+  
+}
+.vehicle .box-container .box:hover{
+  background: lightgreen;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: scale(0.9);
+  border: 1px solid green;
+}
+
+
+
+.services .heading{
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 20px;
+  font-family: cursive;
+}
+.services .heading span{
+  font-size: 40px;
+  font-weight: bolder;
+  color: blue;
+  font-family: cursive;
+  text-decoration: underline;
+}
+.services .box-container{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem;
+  padding: 1.5rem;
+  justify-content: center;
+  background-color: #eee;
+}
+.services .box-container .box{
+  text-align: center;
+  padding: 1.4rem;
+  border-radius: 1rem;
+  box-shadow: burlywood ;
+  border: 2px solid black;
+  height: 20rem;
+  width: 20rem;
+  margin: 0.5rem 3.5rem;
+  background-color: white;
+}
+.services .box-container .box i{
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  background: blue;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.services .box-container .box h3{
+  color: black;
+  font-size: 1.7rem;
+}
+.services .box-container .box p{
+  color: black;
+  font-size: 1rem;
+  /* padding-bottom: 5rem; */
+  line-height: 1.8;
+}
+.services .box-container .box .btn{
+  background-color: lightgreen;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  padding: 8px 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.services .box-container .box:hover{
+  background-color: darkgreen;
+}
+.services .box-container .box:hover h3{
+  color: #fff;
+}
+.services .box-container .box:hover p{
+  color: #eee;
+}
+
+
+.featured{
+  padding-top: 55px;
+}
+.featured h1{
+  font-size: 40px;
+  font-weight: normal;
+  color: black;
+  font-family: cursive;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.featured h1 span{
+  font-size: 40px;
+  font-weight: bolder;
+  color: blue;
+  font-family: cursive;
+  text-decoration: underline;
+}
+.featured .featured-slider{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1.5rem;
+  padding: 1.5rem;
+  justify-content: center;
+  background-color: #eee;
+}
+.featured .featured-slider .box{
+  text-align: center;
+  /* padding: 1rem; */
+  border-radius: 0.5rem;
+  box-shadow: burlywood ;
+  border: 2px solid black;
+  height: 23.5rem;
+  width: 20rem;
+  margin: 0.5rem 2.5rem;
+  background-color: white;
+}
+.featured .featured-slider .box img{
+  /* height: 10rem; */
+  border-radius: 5px;
+  height: 10rem;
+  margin: 1rem 0.5rem;
+}
+.featured .featured-slider .box h3{
+  color: black;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.featured .featured-slider .box .stars i{
+  color: skyblue;
+  font-size: 1.3rem;
+}
+.featured .featured-slider .box .stars span{
+  font-weight: bolder;
+}
+
+.featured .featured-slider .box .price{
+  font-size: 1.7rem;
+  font-weight: bolder;
+  color: seagreen;
+  margin-top: 5px;
+}
+.featured .featured-slider .box .button{
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  background-color: lightgreen;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 5px;
+  font-weight: bolder;
+}
+.featured .featured-slider .box .button:hover{
+  background-color: green;
+  color: white;
+}
+
+
+
+
+.newsletter{
+  padding: 8rem 2rem;
+  text-align: center;
+  background: url(img.jpg) no-repeat ;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+}
+.newsletter h3{
+  color: lightskyblue;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  
+}
+.newsletter p{
+  color: white;
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+}
+.newsletter form{
+  margin: 1rem auto;
+  max-width: 60rem;
+  height: 5rem;
+  display: flex;
+  box-shadow: burlywood ;
+  overflow: hidden;
+  justify-content: center;
+}
+.newsletter form input[type="email"]{
+  height: 70%;
+  width: 70%;
+  padding: 0 2rem;
+  font-size: 1.3rem;
+  color: black;
+  text-transform: none;
+  border-radius: 5rem;
+} 
+.newsletter form input[type="submit"]{
+  height: 70%;
+  width: 20%;
+  font-size: 1.3rem;
+  color: black;
+  background-color: lightgreen;
+  text-transform: none;
+  cursor: pointer;
+  border-radius: 5rem;
+} 
+.newsletter form input[type="submit"]:hover{
+  background-color: green;
+  color: white;
+}
+
+
+
+.reviews{
+  padding-top: 55px;
+}
+.reviews .review-slider{
+  padding-bottom: 3rem;
+  background-color: #eee;
+}
+.reviews h1{
+  font-size: 40px;
+  font-weight: bolder;
+  color: black;
+  font-family: cursive;
+  text-align: center;
+}
+.reviews h1 span{
+  font-size: 50px;
+  font-weight: bolder;
+  color: blue;
+  font-family: cursive;
+  text-decoration: underline;
+}
+.reviews .review-slider .review-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem;
+  row-gap: normal;
+  padding: 1.5rem;
+  justify-content: center;
+}
+.reviews .review-slider .box{
+  padding: 1.4rem;
+  /* margin: 2rem 0; */
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 1rem;
+  /* opacity: 0.4;
+  transform: scale(0.9); */
+  height: 21rem;
+  width: 20rem;
+  margin: 0.5rem 3.5rem;
+  background-color: white;
+}
+.reviews .review-slider .box img{
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.reviews .review-slider .box .content p{
+  color: black;
+  font-size: 1.1rem;
+}
+.reviews .review-slider .box .content h3{
+  color: black;
+  font-size: 2rem;
+}
+.reviews .review-slider .box .content .stars i{
+  color: green;
+  font-size: 1.5rem;
+}
+.reviews .review-slider .box:hover{
+  background-color: lightgreen;
+}
+.reviews .review-slider .review-wrapper .box:hover h3{
+  color: darkblue;
+}
+
+.reviews .pagination{
+  text-align: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.reviews .pagination a{
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+}
+.reviews .pagination a.active-btn{
+  background-color: darkgreen;
+  font-weight: bold;
+  color: white;
+}
+.reviews .pagination a:hover:not(.active-btn){
+  background-color: lightgreen;
+  color: black;
+  border-radius: 5px;
+}
+
+
+
+/* Contact Section Styles */
+.contact {
+  padding: 55px 0;
+  text-align: center;
+}
+.contact .heading {
+  font-size: 40px;
+  font-family: cursive;
+  margin-bottom: 30px;
+}
+.contact h1 span{
+  font-size: 50px;
+  font-weight: bolder;
+  color: blue;
+  font-family: cursive;
+  text-decoration: underline;
+}
+.contact .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #eee;
+}
+.contact form {
+  flex: 1;
+  margin: 20px;
+}
+.contact .map {
+  max-width: 600px;
+  flex: 1;
+  margin: 20px;
+}
+.contact form {
+  max-width: 400px;
+  height: 580px;
+  text-align: left;
+}
+.contact form h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contact form .box {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact form textarea {
+  width: 100%;
+  height: 40%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact form .button {
+  width: 100%;
+  padding: 10px;
+  background-color: lightgreen;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact form .button:hover {
+  background-color: green;
+  color: white;
+}
+
+
+.footer{
+  padding: 50px 0;
+  text-align: center;
+  background-color: #d1e5f4;
+}
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 1.5rem;
+}
+.footer .box-container .box h3{
+  color: black;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+.footer .box-container .box a{
+  color: green;
+  font-size: 1rem;
+  display: block;
+  padding: 0.5em 0;
+}
+.footer .box-container .box a i{
+  padding-right: 0.5rem;
+  color: black;
+}
+.footer .box-container .box a:hover i{
+  padding-right: 2rem;
+}
+.footer .credit{
+  text-align: center;
+  padding: 1rem 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid black;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+  }
+  
+  .menu, .login_btn {
+      flex-basis: auto;
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+  }
+  
+  .logo, .menu a, .login_btn button {
+      padding: 10px;
+      margin: 5px 0;
+  }
+
+  section{
+    padding: 20px;
+  }
+}
+
+
